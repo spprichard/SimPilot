@@ -1,0 +1,21 @@
+{
+  "schema": "simpilot/plan/v1",
+  "name": "Settings smoke",
+  "app": { "bundleId": "com.apple.Preferences", "relaunch": true },
+  "defaults": { "maxSteps": 8, "minProbability": 0.55, "allowScroll": false },
+  "steps": [
+    {
+      "goal": "Open General, then open About.",
+      "expectLabels": ["iOS Version", "Model Name"]
+    },
+    {
+      "goal": "Go back to the top-level Settings list.",
+      "expectLabels": ["Accessibility", "Camera"]
+    },
+    {
+      "goal": "Type Keyboard into the Settings search field.",
+      "expectLabels": ["Keyboard"],
+      "textValues": { "query": "Keyboard" }
+    }
+  ]
+}

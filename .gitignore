@@ -1,0 +1,5 @@
+.build/
+.swiftpm/
+.envrc
+*.report.json
+/Package.resolved
